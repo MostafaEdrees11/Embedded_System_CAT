@@ -1,0 +1,3 @@
+D:/CAT Reloaded/C Programming/Pointers/Ex5/cmake-build-debug/CMakeFiles/Ex5.dir
+D:/CAT Reloaded/C Programming/Pointers/Ex5/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CAT Reloaded/C Programming/Pointers/Ex5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
