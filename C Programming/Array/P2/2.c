@@ -23,7 +23,6 @@ int main()
 	
 	sort_array(arr,array_size);
 	
-	
 	second_largest = second_largest_element(arr);
 	
 	printf("\n2nd largest element in array = %d",second_largest);
@@ -53,7 +52,7 @@ void sort_array(int a[], int size)
 		{
 			if(a[j] > a[i])
 			{
-				a[i] = temp;
+				temp = a[i];
 				a[i] = a[j];
 				a[j] = temp;
 			}
