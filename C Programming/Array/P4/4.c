@@ -25,7 +25,10 @@ int main()
 	
 	repeating_element = Find_Repeating_Element(arr,array_size);
 	
-	printf("\nThe Repeating Element is %d\n",repeating_element);
+	if(repeating_element == -1)
+		printf("There is no repeating elemnts.\n");
+	else
+		printf("\nThe Repeating Element is %d\n",repeating_element);
 	
 	return 0;
 }
@@ -55,4 +58,6 @@ int Find_Repeating_Element(int a[], int size)
 		if(counter > 1)
 			return a[i];
 	}
+	if(counter == 1)
+		return -1;
 }
