@@ -12,6 +12,11 @@
 #include <conio.h>
 #include "stack.h"
 
+void Display(int e)
+{
+	printf("%d ",e);
+}
+
 int main()
 {
 	int element;
@@ -26,7 +31,9 @@ int main()
 		printf("2. Read an element then Push it.\n");
 		printf("3. Pop an element then display it.\n");
 		printf("4. What is the stack size?\n");
-		printf("5. Exit.\n");
+		printf("5. Display the Stack Top.\n");
+		printf("6. Print all elements in the stack.\n");
+		printf("7. Exit.\n");
 		printf("-----------------------------------------------\n");
 		
 		int choose;
@@ -65,11 +72,20 @@ int main()
 			break;
 			
 			case 5:
+			StackTop(&element,&s);
+			printf("Stack Top: %d\n",element);
+			break;
+			
+			case 6:
+			TraverseStack(&s,&Display);
+			break;
+			
+			case 7:
 			exit(1);
 			break;
 		}
 		
-		printf("Enter y to continue.... \n");
+		printf("\nEnter y to continue.... \n");
 	}while(getch() == 'y');
 	
 	return 0;
