@@ -51,7 +51,9 @@ int main()
 			{
 				printf("Enter the value of element: ");
 				scanf("%d",&element);
-				Push(element,&s);				
+				if(!Push(element,&s))
+					printf("The element is not pushed.");
+								
 			}
 			else
 				printf("The Stack is Full !!\n");

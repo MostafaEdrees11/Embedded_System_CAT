@@ -18,13 +18,20 @@ void CreatStack(Stack *ps)
 }
 
 //push an element to the stack.
-void Push(StackEntry e, Stack *ps)
+int Push(StackEntry e, Stack *ps)
 {
 	StackNode *pn = (StackNode *)malloc(sizeof(StackNode));
-	pn->entry = e;
-	pn->next = ps->top;
-	ps->top = pn;
-	ps->size++;
+	
+	if(!pn)
+		return 0;
+	else
+	{
+		pn->entry = e;
+		pn->next = ps->top;
+		ps->top = pn;
+		ps->size++;
+		return 1;
+	}
 }
 
 //pop an element from the stack.

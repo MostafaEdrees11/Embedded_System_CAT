@@ -33,7 +33,7 @@ void 	CreatStack		(Stack *);
 pre  conditions: the stack is initialized and not full
 post conditions: the element has been stored at the top of the stack
 */
-void	Push			(StackEntry, Stack *);
+int	Push			(StackEntry, Stack *);
 
 /*
 pre  conditions: the stack is initialized and not empty
