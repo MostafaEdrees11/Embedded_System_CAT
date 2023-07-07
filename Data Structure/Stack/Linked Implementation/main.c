@@ -72,8 +72,13 @@ int main()
 			break;
 			
 			case 5:
-			StackTop(&element,&s);
-			printf("Stack Top: %d\n",element);
+			if(!StackEmpty(&s))
+			{
+				StackTop(&element,&s);
+				printf("Stack Top: %d\n",element);	
+			}
+			else
+				printf("The Stack is Empty !!\n");
 			break;
 			
 			case 6:
